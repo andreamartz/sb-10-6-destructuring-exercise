@@ -61,3 +61,26 @@ console.log(second); // ?
 // it returns "Marisa"
 console.log(third); // ?
 // it returns "Chi"
+
+// *****************************************************
+// Array Destructuring 2
+// *****************************************************
+// What does the following code return/print?
+
+let [raindrops, whiskers, ...aFewOfMyFavoriteThings] = [
+  "Raindrops on roses",
+  "whiskers on kittens",
+  "Bright copper kettles",
+  "warm woolen mittens",
+  "Brown paper packages tied up with strings",
+];
+
+console.log(raindrops); // ?
+// it returns "Raindrops on roses"
+console.log(whiskers); // ?
+// it returns "Whiskers on kittens"
+console.log(aFewOfMyFavoriteThings); // ?
+// it returns this object:
+//  { "Bright copper kettles",
+//  "warm woolen mittens",
+//  "Brown paper packages tied up with strings"}
