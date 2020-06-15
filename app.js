@@ -122,7 +122,6 @@ const obj2 = {
 };
 
 const { a2, b2 } = obj2.numbers;
-console.log(a2, b2);
 
 // ES5 Array Swap
 // var arr = [1, 2];
@@ -133,3 +132,48 @@ console.log(a2, b2);
 // ES2015 One-Line Array Swap with Destructuring
 let arr = [1, 2];
 [arr[0], arr[1]] = [arr[1], arr[0]];
+
+// raceResults()
+
+// Write a function called raceResults which accepts a single array argument.
+// It should return an object with the keys first, second, third, and rest.
+
+// * first: the first element in the array
+// * second: the second element in the array
+// * third: the third element in the array
+// * rest: all other elements in the array
+
+// Write a one line function to make this work using
+// * An arrow function
+// * Destructuring
+// * ‘Enhanced’ object assignment (same key/value shortcut)
+
+const raceResults = (racers) => {
+  const [first, second, third, ...rest] = racers;
+  return { first, second, third, rest };
+};
+
+const raceResults2 = ([first, second, third, ...rest]) => ({
+  first,
+  second,
+  third,
+  rest,
+});
+
+console.log(
+  "raceResults: ",
+  raceResults(["Tom", "Margaret", "Allison", "David", "Pierre"])
+);
+console.log(
+  "raceResults2: ",
+  raceResults2(["Tom", "Margaret", "Allison", "David", "Pierre"])
+);
+
+/*
+  {
+    first: "Tom",
+    second: "Margaret",
+    third: "Allison",
+    rest: ["David", "Pierre"]
+  }
+*/
