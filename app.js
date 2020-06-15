@@ -47,3 +47,17 @@ getUserData({ firstName: "Melissa" }); // ?
 getUserData({}); // ?
 // console.log(getUserData({}));
 // it returns "Your name is undefined and you like green"
+
+// *****************************************************
+// Array Destructuring 1
+// *****************************************************
+// What does the following code return/print?
+
+let [first, second, third] = ["Maya", "Marisa", "Chi"];
+
+console.log(first); // ?
+// it returns "Maya"
+console.log(second); // ?
+// it returns "Marisa"
+console.log(third); // ?
+// it returns "Chi"
