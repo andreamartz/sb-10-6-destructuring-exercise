@@ -27,3 +27,23 @@ let planetFacts = {
 let { numPlanets, ...discoveryYears } = planetFacts;
 
 console.log(discoveryYears); // ?
+// it returns { yearNeptuneDiscovered: 1846, yearMarsDiscovered: 1659 }
+
+// *****************************************************
+// Object Destructuring 3
+// *****************************************************
+// What does the following code return/print?
+
+function getUserData({ firstName, favoriteColor = "green" }) {
+  return `Your name is ${firstName} and you like ${favoriteColor}`;
+}
+
+getUserData({ firstName: "Alejandro", favoriteColor: "purple" }); // ?
+// console.log(getUserData({ firstName: "Alejandro", favoriteColor: "purple" }));
+// it returns "Your name is Alejandro and you like purple"
+getUserData({ firstName: "Melissa" }); // ?
+// console.log(getUserData({ firstName: "Melissa" }));
+// it returns "Your name is Melissa and you like green"
+getUserData({}); // ?
+// console.log(getUserData({}));
+// it returns "Your name is undefined and you like green"
