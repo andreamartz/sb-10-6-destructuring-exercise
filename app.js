@@ -96,12 +96,13 @@ let numbers = [10, 20, 30];
 console.log(numbers); // ?
 // it returns [10, 30, 20]
 
-// ES2015 Refactoring
-// In this exercise, you’ll refactor some ES5 code into ES2015.
 // *****************************************************
-// ES5 Assigning Variables to Object Properties
+// // ES2015 Refactoring
 // *****************************************************
-// ES5:
+
+// In these exercises, you’ll refactor some ES5 code into ES2015.
+
+// ES5 Assigning Variables to Object Properties:
 var obj = {
   numbers: {
     a: 1,
@@ -112,7 +113,7 @@ var obj = {
 var a = obj.numbers.a;
 var b = obj.numbers.b;
 
-// ES2015:
+// ES2015 Object Destructuring:
 const obj2 = {
   numbers: {
     a2: 1,
