@@ -84,3 +84,14 @@ console.log(aFewOfMyFavoriteThings); // ?
 //  { "Bright copper kettles",
 //  "warm woolen mittens",
 //  "Brown paper packages tied up with strings"}
+
+// *****************************************************
+// Array Destructuring 3
+// *****************************************************
+// What does the following code return/print?
+
+let numbers = [10, 20, 30];
+[numbers[1], numbers[2]] = [numbers[2], numbers[1]];
+
+console.log(numbers); // ?
+// it returns [10, 30, 20]
