@@ -78,12 +78,12 @@ let [raindrops, whiskers, ...aFewOfMyFavoriteThings] = [
 console.log(raindrops); // ?
 // it returns "Raindrops on roses"
 console.log(whiskers); // ?
-// it returns "Whiskers on kittens"
+// it returns "whiskers on kittens"
 console.log(aFewOfMyFavoriteThings); // ?
 // it returns this object:
-//  { "Bright copper kettles",
+//  [ "Bright copper kettles",
 //  "warm woolen mittens",
-//  "Brown paper packages tied up with strings"}
+//  "Brown paper packages tied up with strings"]
 
 // *****************************************************
 // Array Destructuring 3
@@ -95,3 +95,35 @@ let numbers = [10, 20, 30];
 
 console.log(numbers); // ?
 // it returns [10, 30, 20]
+
+// ES2015 Refactoring
+// In this exercise, you’ll refactor some ES5 code into ES2015.
+// *****************************************************
+// ES5 Assigning Variables to Object Properties
+// *****************************************************
+// ES5:
+var obj = {
+  numbers: {
+    a: 1,
+    b: 2,
+  },
+};
+
+var a = obj.numbers.a;
+var b = obj.numbers.b;
+
+// ES2015:
+const obj2 = {
+  numbers: {
+    a2: 1,
+    b2: 2,
+  },
+};
+
+// console.log(
+//   ({
+//     numbers: { a, b },
+//   } = obj2)
+// );
+const { a2, b2 } = obj2.numbers;
+console.log(a2, b2);
